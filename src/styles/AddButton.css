@@ -1,0 +1,21 @@
+button {
+  color: white;
+  background-color: #2d5cfb;
+  border: none;
+  width: 35%;
+  border-radius: 20px;
+  display: block;
+  margin: 1.4rem;
+  padding: 1rem 1.7rem;
+  cursor: pointer;
+}
+
+button svg {
+  position: relative;
+  top: 3px;
+  margin-right: 4px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

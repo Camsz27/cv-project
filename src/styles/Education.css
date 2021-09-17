@@ -1,15 +1,13 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .titleSection {
-  border-bottom: 2px solid aqua;
+  border-bottom: 1px solid #377ea4;
 }
 
 .educationInformation {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+
+.education {
+  margin-bottom: 1.5rem;
 }

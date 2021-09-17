@@ -4,9 +4,9 @@ import '../styles/Experience.css';
 export default class Experience extends React.Component {
   render() {
     return (
-      <content>
+      <section className='experience'>
         <h1 className='titleSection'>Experience</h1>
-        <div className='educationInformation'>
+        <div className='experienceInformation'>
           <div>
             <h2>Position</h2>
             <h2>Company</h2>
@@ -21,7 +21,7 @@ export default class Experience extends React.Component {
             <h4>City, Country</h4>
           </aside>
         </div>
-      </content>
+      </section>
     );
   }
 }

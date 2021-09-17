@@ -1,14 +1,11 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px solid aqua;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #377ea4;
+  margin-bottom: 1.4rem;
+  max-width: 100%;
 }
 
 svg {
@@ -17,5 +14,20 @@ svg {
 }
 
 .fullName {
-  color: aqua;
+  color: #377ea4;
+}
+
+.info {
+  margin: 0.25rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+span {
+  display: flex;
+  align-items: center;
+}
+
+.position {
+  font-size: 1.7rem;
 }

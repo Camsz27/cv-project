@@ -4,7 +4,7 @@ import '../styles/Education.css';
 export default class Education extends React.Component {
   render() {
     return (
-      <content>
+      <section className='education'>
         <h1 className='titleSection'>Education</h1>
         <div className='educationInformation'>
           <div>
@@ -16,7 +16,7 @@ export default class Education extends React.Component {
             <h4>City, Country</h4>
           </aside>
         </div>
-      </content>
+      </section>
     );
   }
 }
