@@ -2,6 +2,7 @@ import Education from './components/Education';
 import Experience from './components/Experience';
 import Information from './components/Information';
 import AddButton from './components/AddButton';
+import Skills from './components/Skills';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Information></Information>
         <Education></Education>
         <Experience></Experience>
+        <Skills></Skills>
       </div>
     </main>
   );
