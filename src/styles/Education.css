@@ -1,13 +1,30 @@
 .titleSection {
   border-bottom: 1px solid #377ea4;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #377ea4;
 }
 
 .educationInformation {
   display: flex;
-  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
   align-items: baseline;
 }
 
 .education {
   margin-bottom: 1.5rem;
+}
+
+.university {
+  font-size: 1.1rem;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
 }
