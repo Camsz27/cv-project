@@ -12,9 +12,11 @@ class App extends React.Component {
     this.state = {
       skills: ['Skill 1', 'Skill 2', 'Skill 3'],
       experiences: [''],
+      educationExp: [''],
     };
     this.skillHandler = this.skillHandler.bind(this);
     this.experienceHandler = this.experienceHandler.bind(this);
+    this.educationHandler = this.educationHandler.bind(this);
   }
 
   skillHandler() {
@@ -29,18 +31,24 @@ class App extends React.Component {
     });
   }
 
+  educationHandler() {
+    this.setState({
+      educationExp: this.state.educationExp.concat(''),
+    });
+  }
+
   render() {
     return (
       <main>
         <section className='addFields'>
           <h1>Add Additional Fields</h1>
-          <AddButton className='Education' />
+          <AddButton className='Education' handler={this.educationHandler} />
           <AddButton className='Experience' handler={this.experienceHandler} />
           <AddButton className='Skills' handler={this.skillHandler} />
         </section>
         <div className='cvInfo'>
           <Information />
-          <Education />
+          <Education educationExp={this.state.educationExp} />
           <Experience experiences={this.state.experiences} />
           <Skills skills={this.state.skills} />
         </div>
