@@ -11,22 +11,21 @@ class App extends React.Component {
     super();
     this.state = {
       skills: ['Skill 1', 'Skill 2', 'Skill 3'],
-      message: 'welcome',
+      experiences: [''],
     };
     this.skillHandler = this.skillHandler.bind(this);
-  }
-
-  addSkill() {
-    console.log('here we are');
-    this.setState({
-      skills: this.state.skills.concat(''),
-    });
+    this.experienceHandler = this.experienceHandler.bind(this);
   }
 
   skillHandler() {
-    console.log('working');
     this.setState({
       skills: this.state.skills.concat('New skill'),
+    });
+  }
+
+  experienceHandler() {
+    this.setState({
+      experiences: this.state.experiences.concat(''),
     });
   }
 
@@ -36,17 +35,13 @@ class App extends React.Component {
         <section className='addFields'>
           <h1>Add Additional Fields</h1>
           <AddButton className='Education' />
-          <AddButton className='Experience' />
-          <AddButton
-            className='Skills'
-            skills={this.state.skills}
-            handler={this.skillHandler}
-          />
+          <AddButton className='Experience' handler={this.experienceHandler} />
+          <AddButton className='Skills' handler={this.skillHandler} />
         </section>
         <div className='cvInfo'>
           <Information />
           <Education />
-          <Experience />
+          <Experience experiences={this.state.experiences} />
           <Skills skills={this.state.skills} />
         </div>
       </main>

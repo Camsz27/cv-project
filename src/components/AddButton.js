@@ -2,12 +2,6 @@ import React from 'react';
 import '../styles/AddButton.css';
 
 export default class AddButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      skills: this.props.skills,
-    };
-  }
   render() {
     return (
       <button onClick={this.props.handler}>
