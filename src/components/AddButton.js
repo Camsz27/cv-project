@@ -2,9 +2,15 @@ import React from 'react';
 import '../styles/AddButton.css';
 
 export default class AddButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      skills: this.props.skills,
+    };
+  }
   render() {
     return (
-      <button>
+      <button onClick={this.props.handler}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           height='48px'
